@@ -5,6 +5,10 @@
     font-family: "Kadwa", serif;
 }
 
+body{
+    background: #FFF !important;
+}
+
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -23,27 +27,27 @@ input[type=number] {
     color: #000 !important;
 }
 
-@keyframes appear{
+/* @keyframes appear{
     from{
         opacity:0.5;
         /* clip-path: inset(100% 100% 0 0); */
-        transform: scale(0.7);
-    }
+        /* transform: scale(0.7); */
+    /* } */
 
-    to{
-        opacity: 1;
+    /* to{ */
+        /* opacity: 1; */
         /* clip-path: inset(0 0 0 0); */
-        transform: scale(1);
-    }
+        /* transform: scale(1); */
+    /* } */
 
 
-}
+/* } */
 
-.block{
+/* .block{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
-}
+} */
 
 
 
@@ -164,8 +168,10 @@ a {
     border: 2px solid #FFF;
     color: #ED7D31;
     border-radius: 30px;
-    font-size: 1.2vw;
-    padding: 0.7vw 1.7vw;
+    /* font-size: 1.2vw; */
+    font-size: 22px;
+    /* padding: 0.7vw 1.7vw; */
+    padding: 10px 20px;
     transition: all ease .3s;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, .25);
 }
@@ -1477,4 +1483,90 @@ input::file-selector-button{
 input::file-selector-button:hover{
     background: none !important;
     color: #0D4042 !important;
+}
+
+
+.testimonials::before{
+    background-color: #0D4042 !important;
+    opacity: 0.1;
+}
+
+
+
+
+
+
+.main-banner{
+    padding: 30px 0 30px 0 !important;
+}
+
+
+.section{
+    margin-top: 0 !important;
+}
+
+.buttons{
+    display: flex;
+
+}
+
+.main-banner .item .buttons .main-button{
+    margin-bottom: 0 !important;
+}
+
+.main-banner .item .buttons .main-button a{
+    font-size: 20px !important;
+    background: #FFF;
+    border: 2px solid #ED7D31;
+    color: #ED7D31 !important;
+    background: #0D4042;
+}
+
+.main-banner .item .buttons .icon-button a i{
+    /* background: #0D4042; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #ED7D31;
+    font-size: 40px;
+    border: 2px solid #ED7D31;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.close-btn{
+    float: right;
+    background: #D33D3D;
+    padding: 5px 12px;
+    color: #FFF;
+    border-radius: 50%;
+}
+
+
+
+@media (max-width: 600px) {
+    .main-banner .item h2{
+        font-size: 28px !important;
+    }
+  }
+
+@media (max-width: 768px) {
+    .buttons{
+        flex-direction: column !important;
+
+    }
+
+    .buttons .icon-button{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .modal-body iframe{
+        height: 200px;
+    }
 }
